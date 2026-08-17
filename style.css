@@ -1,0 +1,342 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: rgba(153, 10, 255, 0.744); */
+}
+/* Keeps height fixed while allowing width to adapt */
+.custom-img {
+  height: 350px !important; /* Locks height to your desired size */
+  width: 100%;
+  object-fit: cover; /* Prevents image stretching or distortion */
+  filter: brightness(0.8);
+}
+
+/* Ensures caption text stays centered vertically inside the fixed height */
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+/* Custom Purple Navbar */
+.nav-bar {
+  background-color: #553392 !important;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.75rem 1.5rem;
+}
+
+/* Brand Styling */
+.nav-bar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+}
+
+/* Nav Links Styling */
+.nav-bar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover & Active States */
+.nav-bar .nav-link:hover,
+.nav-bar .nav-link.active {
+  color: #e7d66b !important; /* Soft warm accent highlight */
+  transform: translateY(-1px);
+}
+
+/* Mobile Toggler White Icon */
+.nav-bar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-bar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Header Hero Section */
+.hero-header {
+  background: linear-gradient(135deg, #fbfbde 0%, #ffffff 100%);
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  border-left: 6px solid #553392;
+  box-shadow: 0 8px 24px rgba(85, 51, 146, 0.08);
+}
+
+/* Primary Title */
+.hero-header h1 {
+  color: #553392;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Subtitle */
+.hero-header h5 {
+  color: #af74bd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Chef Image Frame Accent */
+.hero-img-frame {
+  border: 4px solid #e7d66b;
+  box-shadow: 0 4px 14px rgba(225, 173, 1, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.hero-img-frame:hover {
+  transform: scale(1.02);
+}
+
+/* Section Heading */
+.service-heading {
+  color: #553392;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Carousel Container & Image Styling */
+.custom-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(85, 51, 146, 0.12);
+}
+
+.custom-img {
+  height: 380px;
+  object-fit: cover;
+  /* Subtle dark gradient overlay directly on image for text readability without a solid box */
+  filter: brightness(0.65);
+}
+
+/* Text Captions (No Purple Background) */
+.custom-caption {
+  bottom: 25px;
+  padding: 0 1rem;
+}
+
+.custom-caption h3 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.custom-caption p {
+  color: #fbfbde;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Accent Badge */
+.badge-limited {
+  background-color: #e1ad01 !important;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Carousel Control Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(84, 51, 146, 0);
+  border-radius: 50%;
+  padding: 1.25rem;
+  background-size: 50%;
+}
+
+/* Section Headings */
+.palette-title {
+  color: #553392;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Team Member Cards */
+.friend-card {
+  border: 1px solid rgba(85, 51, 146, 0.1);
+  background-color: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(85, 51, 146, 0.12) !important;
+}
+
+.friend-card .card-title {
+  color: #553392;
+  font-weight: 600;
+}
+
+.friend-card strong {
+  color: #af74bd;
+}
+
+/* Hiring Card Styling */
+.hiring-card {
+  background: linear-gradient(145deg, #fbfbde 0%, #ffffff 100%);
+  border: 2px solid #e7d66b !important;
+}
+
+.hiring-card .card-title {
+  color: #553392;
+  font-weight: 700;
+}
+
+/* List Group & Badges */
+.badge-palette {
+  background-color: #553392 !important;
+  color: #fbfbde;
+}
+
+/* Apply Now Button */
+.btn-apply-palette {
+  background-color: #e1ad01;
+  border-color: #e1ad01;
+  color: #000000;
+  transition: all 0.2s ease;
+}
+
+.btn-apply-palette:hover {
+  background-color: #553392;
+  border-color: #553392;
+  color: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap");
+
+/* Typography Defaults */
+#category {
+  font-family: "Inter", sans-serif;
+  color: #2b2b2b;
+}
+
+#category h2,
+#category h3,
+#category .card-title,
+#category h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Headings */
+#category .category-heading {
+  color: #553392;
+  font-weight: 700;
+}
+
+#category .specials-heading {
+  color: #553392;
+  font-weight: 600;
+}
+
+/* Custom Cards */
+#category .custom-card {
+  border: 1px solid rgba(85, 51, 146, 0.12);
+  background-color: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#category .custom-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(85, 51, 146, 0.12) !important;
+}
+
+#category .card-title {
+  color: #553392;
+  font-weight: 600;
+}
+
+/* View Buttons */
+#category .btn-palette-view {
+  background-color: #553392;
+  border-color: #553392;
+  color: #fbfbde;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+#category .btn-palette-view:hover {
+  background-color: #e1ad01;
+  border-color: #e1ad01;
+  color: #000000;
+}
+
+/* Chef / Subtitle Text */
+#category .chef-text {
+  color: #af74bd !important;
+  font-weight: 500;
+}
+
+/* Carousel Control Buttons */
+#category .custom-control-icon {
+  background-color: #553392 !important;
+  color: #fbfbde;
+  border-radius: 50%;
+  padding: 0.6rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography Defaults */
+#gallery {
+  font-family: "Inter", sans-serif;
+  color: #2b2b2b;
+}
+
+#gallery h2,
+#gallery h3,
+#gallery .card-title {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Headings */
+#gallery .gallery-title {
+  color: #553392;
+  font-weight: 700;
+}
+
+#gallery .category-header {
+  color: #553392;
+  font-weight: 600;
+  border-bottom-color: rgba(85, 51, 146, 0.2) !important;
+}
+
+/* Card Styling */
+#gallery .custom-card {
+  border: 1px solid rgba(85, 51, 146, 0.12);
+  background-color: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#gallery .custom-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(85, 51, 146, 0.12) !important;
+  border-color: #af74bd;
+}
+
+#gallery .card-title {
+  color: #553392;
+}
+
+#gallery .card-text {
+  color: #555555 !important;
+}
